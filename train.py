@@ -61,7 +61,7 @@ def main():
     TrainNetwork(model, trainloader, train_data, validloader,
                  criterion, optimizer, epochs, device)
 
-    SaveCheckpoint(model, arch, classifier_input_size, dropout,
+    SaveCheckpoint(model, arch, learning_rate, epochs, classifier_input_size, dropout,
                    hidden_units, train_data.class_to_idx, save_dir)
 
 
